@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #1a0d2e 0%, #16001e 100%);
+  color: #f5e6ff;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.meme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.meme-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+  border: 2px solid rgba(255, 51, 204, 0.3);
+}
+
+.meme-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(255, 51, 204, 0.4);
+}
+
+.meme-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 12px 32px;
+  background: linear-gradient(135deg, #ff33cc, #6633ff);
+  border-radius: 50px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 10px 40px rgba(255, 51, 204, 0.4);
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  border-top: 2px solid #ff33cc;
+}

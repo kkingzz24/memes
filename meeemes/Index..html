@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memes</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Internal CSS -->
+    <style>
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate {
+            animation: slideIn 0.6s ease-out;
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #ff33cc, #6633ff, #ffcc00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with inline CSS -->
+        <header style="text-align: center; padding: 60px 20px;">
+            <h1 class="text-gradient animate" style="font-size: 5rem; font-weight: 900; letter-spacing: 0.05em;">
+                MEMES
+            </h1>
+            <p class="animate" style="font-size: 1.5rem; margin-top: 20px; color: #c9b3d6;">
+                The Ultimate Kenyan Humor Collection 🔥
+            </p>
+            <div class="badge">10 Epic Memes</div>
+        </header>
+
+        <!-- Meme Gallery -->
+        <main class="meme-grid">
+            <div class="meme-card animate">
+                <img src="meme1.jpg" alt="What goes around meme">
+            </div>
+            <div class="meme-card animate">
+                <img src="meme2.jpg" alt="Chapati making meme">
+            </div>
+            <div class="meme-card animate">
+                <img src="meme3.jpg" alt="Survival year meme">
+            </div>
+            <div class="meme-card animate">
+                <img src="meme4.jpg" alt="Self-awareness meme">
+            </div>
+            <div class="meme-card animate">
+                <img src="meme5.jpg" alt="Through hard times meme">
+            </div>
+            <div class="meme-card animate">
+                <img src="meme6.jpg" alt="Waahing story meme">
+            </div>
+            <div class="meme-card animate">
+                <img src="meme7.jpg" alt="Kejani to Mjengo meme">
+            </div>
+            <div class="meme-card animate">
+                <img src="meme8.jpg" alt="Third wheeling meme">
+            </div>
+            <div class="meme-card animate">
+                <img src="meme9.jpg" alt="Milk and pampers meme">
+            </div>
+            <div class="meme-card animate">
+                <img src="meme10.jpg" alt="Utanyimana meme">
+            </div>
+        </main>
+
+        <!-- Footer with inline CSS -->
+        <footer style="background: linear-gradient(180deg, transparent, rgba(255, 51, 204, 0.1));">
+            <p style="font-size: 1.2rem; color: #c9b3d6;">
+                Made with 💖 for meme lovers everywhere
+            </p>
+            <p class="text-gradient" style="margin-top: 10px; font-weight: 600;">
+                Keep scrolling, keep laughing 😂
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
